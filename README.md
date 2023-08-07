@@ -17,11 +17,11 @@ import (
 
 func main() {
     cli = &api.ApiClient{
-	    Client:  http.DefaultClient,
+        Client:  http.DefaultClient,
 
         // Your Metronero backend instance
-		BaseUrl: "https://mnero-1.digilol.net",
-	}
+        BaseUrl: "https://mnero-1.digilol.net",
+    }
 
     // Obtain an API token
     token, err := cli.PostLogin("cool_merchant", "1337password")
